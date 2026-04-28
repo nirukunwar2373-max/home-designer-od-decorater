@@ -36,6 +36,15 @@
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .product img {
+            width: 150px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
         }
         footer {
             background-color: #333;
@@ -43,13 +52,23 @@
             text-align: center;
             padding: 10px;
         }
+        @media (max-width: 600px) {
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
+            .product img {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Home Decor Haven</h1>
-    <p>Your one-stop destination for stylish home decorating items</p>
+    <p>Stylish decorating items for modern homes</p>
 </header>
 
 <nav>
@@ -64,99 +83,109 @@
     <h2>Wall Decor</h2>
 
     <div class="product">
-        <h3>Canvas Paintings</h3>
-        <p>Beautiful canvas paintings add personality and color to your walls. Choose from abstract art, landscapes, or modern minimal designs that suit your interior theme.</p>
+        <img src="https://source.unsplash.com/300x200/?painting,wall" alt="">
+        <div>
+            <h3>Canvas Paintings</h3>
+            <p>Artistic canvas paintings bring color and personality to your walls, perfect for modern interiors.</p>
+        </div>
     </div>
 
     <div class="product">
-        <h3>Wall Mirrors</h3>
-        <p>Decorative mirrors not only enhance beauty but also make spaces look larger and brighter. Available in vintage, modern, and geometric styles.</p>
+        <img src="https://source.unsplash.com/300x200/?mirror,decor" alt="">
+        <div>
+            <h3>Wall Mirrors</h3>
+            <p>Stylish mirrors enhance lighting and make rooms appear larger and more elegant.</p>
+        </div>
     </div>
 
-    <div class="product">
-        <h3>Wall Shelves</h3>
-        <p>Floating shelves are perfect for displaying books, plants, and small decorative items while maintaining a clean and stylish look.</p>
-    </div>
 </section>
 
 <section id="lighting">
     <h2>Lighting Decor</h2>
 
     <div class="product">
-        <h3>Chandeliers</h3>
-        <p>Elegant chandeliers create a luxurious ambiance in living rooms and dining areas. Choose crystal, modern LED, or classic designs.</p>
+        <img src="https://source.unsplash.com/300x200/?chandelier" alt="">
+        <div>
+            <h3>Chandeliers</h3>
+            <p>Elegant chandeliers add luxury and charm to living rooms and dining spaces.</p>
+        </div>
     </div>
 
     <div class="product">
-        <h3>Table Lamps</h3>
-        <p>Stylish table lamps provide both functionality and decoration. Perfect for bedrooms, study tables, and cozy corners.</p>
+        <img src="https://source.unsplash.com/300x200/?lamp" alt="">
+        <div>
+            <h3>Table Lamps</h3>
+            <p>Perfect lighting solutions for bedrooms and workspaces with stylish designs.</p>
+        </div>
     </div>
 
-    <div class="product">
-        <h3>String Lights</h3>
-        <p>Fairy lights add warmth and charm to any space. Ideal for bedrooms, balconies, and festive decorations.</p>
-    </div>
 </section>
 
 <section id="furniture">
     <h2>Decorative Furniture</h2>
 
     <div class="product">
-        <h3>Accent Chairs</h3>
-        <p>Accent chairs are both comfortable and stylish. They serve as statement pieces that elevate your interior design.</p>
+        <img src="https://source.unsplash.com/300x200/?chair,modern" alt="">
+        <div>
+            <h3>Accent Chairs</h3>
+            <p>Comfortable and stylish chairs that enhance your room’s look.</p>
+        </div>
     </div>
 
     <div class="product">
-        <h3>Coffee Tables</h3>
-        <p>Modern coffee tables come in wood, glass, and metal designs, adding functionality and aesthetic appeal to your living room.</p>
+        <img src="https://source.unsplash.com/300x200/?coffee-table" alt="">
+        <div>
+            <h3>Coffee Tables</h3>
+            <p>Modern tables that combine functionality with aesthetics.</p>
+        </div>
     </div>
 
-    <div class="product">
-        <h3>Bookshelves</h3>
-        <p>Bookshelves not only store books but also act as decorative displays for art pieces, plants, and souvenirs.</p>
-    </div>
 </section>
 
 <section id="textiles">
     <h2>Home Textiles</h2>
 
     <div class="product">
-        <h3>Decorative Cushions</h3>
-        <p>Colorful cushions enhance the comfort and look of sofas and beds. Mix patterns and textures for a vibrant feel.</p>
+        <img src="https://source.unsplash.com/300x200/?cushion" alt="">
+        <div>
+            <h3>Decorative Cushions</h3>
+            <p>Bright and cozy cushions that add comfort and color.</p>
+        </div>
     </div>
 
     <div class="product">
-        <h3>Rugs and Carpets</h3>
-        <p>Rugs define spaces and add warmth. Choose from traditional, modern, or bohemian styles to match your décor.</p>
+        <img src="https://source.unsplash.com/300x200/?carpet,rug" alt="">
+        <div>
+            <h3>Rugs & Carpets</h3>
+            <p>Soft rugs that define your space and add warmth.</p>
+        </div>
     </div>
 
-    <div class="product">
-        <h3>Curtains</h3>
-        <p>Curtains provide privacy and elegance. Light sheer curtains create an airy feel, while heavy drapes add sophistication.</p>
-    </div>
 </section>
 
 <section id="plants">
-    <h2>Indoor Plants & Decor</h2>
+    <h2>Indoor Plants</h2>
 
     <div class="product">
-        <h3>Artificial Plants</h3>
-        <p>Low-maintenance and evergreen, artificial plants bring greenery without the need for care.</p>
+        <img src="https://source.unsplash.com/300x200/?indoor-plant" alt="">
+        <div>
+            <h3>Real Plants</h3>
+            <p>Bring freshness and natural beauty into your home.</p>
+        </div>
     </div>
 
     <div class="product">
-        <h3>Real Indoor Plants</h3>
-        <p>Plants like succulents, snake plants, and peace lilies improve air quality and bring natural beauty indoors.</p>
+        <img src="https://source.unsplash.com/300x200/?plant-pot" alt="">
+        <div>
+            <h3>Decorative Pots</h3>
+            <p>Stylish pots that enhance your plant displays.</p>
+        </div>
     </div>
 
-    <div class="product">
-        <h3>Decorative Pots</h3>
-        <p>Stylish pots and planters enhance the look of your plants and complement your interior design.</p>
-    </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Home Decor Haven | Designed for modern living</p>
+    <p>&copy; 2026 Home Decor Haven</p>
 </footer>
 
 </body>
